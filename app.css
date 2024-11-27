@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+textarea {
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .aside {
+    display: flex;
+    justify-content: end;
+  }
+
+  .action-group {
+    display: flex;
+    gap: 16px;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+
+      img {
+        margin-left: 4px;
+      }
+    }
+
+    button {
+      flex-grow: 1;
+    }
+  }
+}
+
+.form + .form {
+  margin-top: 16px;
+}

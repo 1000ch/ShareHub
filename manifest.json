@@ -1,0 +1,30 @@
+{
+  "name": "ShareHub",
+  "short_name": "ShareHub",
+  "description": "ShareHub",
+  "start_url": "/ShareHub/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [{
+    "src": "./img/icon.png",
+    "type": "image/png",
+    "sizes": "1024x1024",
+    "purpose": "any maskable"
+  }, {
+    "src": "./img/icon.svg",
+    "type": "image/svg",
+    "sizes": "1024x1024",
+    "purpose": "any maskable"
+  }],
+  "share_target": {
+    "action": "/ShareHub/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
